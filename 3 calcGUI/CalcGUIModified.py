@@ -168,7 +168,7 @@ class Application(Frame):
         self.mod_bttn = Button(self, text="%", width=9, height=3,bg='LightBlue', fg='red', command=lambda: self.add_chr('%'))
         self.mod_bttn.grid(row=4, column=2)
 
-        self.seven_bttn = Button(self, text="Bushra", width=9, height=3, bg='LightBlue', fg='red',command=lambda: self.add_chr("Siddiqi"))
+        self.seven_bttn = Button(self, text="Clr", width=9, height=3, bg='LightBlue', fg='red',command=lambda: self.add_chr("End"))
         self.seven_bttn.grid(row=1, column=0)
 
         self.eight_bttn = Button(self, text="8", width=9, height=3,bg='LightBlue', fg='red', command=lambda: self.add_chr(8))

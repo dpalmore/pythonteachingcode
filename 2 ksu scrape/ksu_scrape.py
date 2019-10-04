@@ -1,12 +1,12 @@
 '''
-TO use this code, you will first need to install the three packages being imported below using pip or a manual install method.
+To use this code, you will first need to install the three packages being imported below using pip or a manual install method.
 '''
 from bs4 import BeautifulSoup
 import requests
 import csv
 from datetime import datetime
 
-
+def ksuscraper(year):
 source = requests.get('http://news.kennesaw.edu/in-the-news/?&categories=in%20the%20news&year=2018').text
 
 soup = BeautifulSoup(source, 'lxml')
@@ -53,6 +53,6 @@ for blog_post in blog_posts:
     csv_writer.writerow([i,justtitle,source,URL,date])
 
     i += 1
-    print()
+    print("Done")
 
 ksu_news_csv.close()
